@@ -1,0 +1,17 @@
+.adminnavbar{
+    height : 60px ;
+    background-color :  #2E4053  ;
+    color : white ;
+    position : fixed ;
+    z-index: 1;
+    width : 100% ;
+    display:flex ;
+    justify-content : center ;
+    align-items : center ;
+    &-logo{
+        cursor : pointer ;
+        text-transform : uppercase ;
+    }
+
+}
+

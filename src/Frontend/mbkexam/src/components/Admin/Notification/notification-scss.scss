@@ -1,0 +1,76 @@
+.admin-notification-container{
+    width : 100% ;
+    margin : 0px auto ;
+    .admin-notification-header{
+        width : 100% ;
+        p{
+            font-size : 20px ;
+            font-weight : 400 ;
+            text-transform : uppercase ;
+            margin : 0px ;
+            padding-bottom  : 10px ;
+        }
+        border-bottom : 1px solid ;
+        margin-bottom : 20px ;
+    }
+    .admin-notification-content{
+        width : 100% ;
+        &-empty{
+            display : flex ;
+            flex-direction :column  ;
+            align-items: center ;
+            justify-content : center ;
+            width : 100% ;
+            height : 100vh ;
+            color : #283747 ;
+            i{
+                font-size : 60px ;
+                margin-bottom : 10px ;
+            }
+        }
+        .admin-notification-item{
+            border-radius : 10px ;
+            width : 100% ;
+            padding : 10px ;
+            margin-bottom : 10px ;
+            transition : background-color 100ms ;
+            &-header{
+                &-userinfo{
+                    display : flex ;
+                    img{
+                        border-radius : 50% ;
+                        height : 50px ;
+                        width : 50px ;
+                        margin-right : 10px ;
+                    }
+                    &-data{
+                        display : flex ;
+                        flex-direction : column ;
+                        p,small{
+                            margin : 0px ;
+                            cursor : pointer ;
+                            color : blue ;
+                        }
+    
+                    }
+
+                }
+            }
+            .admin-notification-item-content
+                p{
+                    margin : 5px 0px ;
+                }
+                span{
+                    color : blue ;
+                    cursor: pointer;
+                }
+            }
+            .admin-notification-item-bottom{
+                display : flex ;
+                justify-content : flex-end ;
+                p{
+                    margin : 0px ;
+                }
+            }
+        }
+    }

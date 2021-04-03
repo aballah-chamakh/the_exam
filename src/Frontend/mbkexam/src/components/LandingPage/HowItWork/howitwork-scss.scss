@@ -1,0 +1,110 @@
+.howitwork-container{
+    display : flex ;
+    flex-direction  :column ;
+    align-items : center ;
+    padding : 0px 30px ;
+    background-color : #FBFCFC;
+    &-title{
+        font-size : 25px ;
+        color : #1A5276 ;
+        text-transform : uppercase ;
+        padding : 60px ;
+        text-align: center ;
+    }
+    .howitwork-first-step,.howitwork-second-step,.howitwork-third-step{
+        display : flex ;
+        justify-content : space-between ;
+        margin-bottom : 50px ;
+       
+        max-width : 1080px ;
+        p{
+            margin : 0px ;
+            font-size : 18px ;
+        }
+        &-img{
+            width : 48% ;
+            img{
+               width : 100% ;
+               max-height : 300px ;
+            }
+        }
+
+        &-description{
+           width : 50% ;
+           &-hiddenimg{
+                display : none ;
+            }
+            &-title{
+                color : #1A5276 ;
+                text-transform : uppercase ;
+                font-size : 20px ;
+                font-weight :500 ;
+                padding-bottom : 0px ;
+            }
+            button{
+               
+                    background-color: #C0392B ; //#2E4053 ;
+                    color : white ;
+                    text-transform : uppercase ;
+                    width : 100% ;
+                    padding : 10px ;
+                    margin-top : 10px  ;
+                    border-radius : 5px ;  
+            }
+        }
+        @media only screen and (max-width: 900px) {
+            justify-content : center ;
+            
+            &-img{
+                display : none ;
+            }
+            &-description{
+               
+                width : 100% ;
+                display:flex ;
+                flex-direction : column ;
+                align-items : center ;
+                text-align : center ;
+                &-hiddenimg{
+                    display : block  ;
+                    width : 100% ;
+                    img{
+                        max-width : 600px;
+                        height : 400px ;
+                        margin : 20px 0px ;
+                       
+                    }
+                }
+            }
+        }
+         @media only screen and (max-width: 600px) {
+            p{
+                font-size : 13px ;
+            }
+            &-description{
+                &-hiddenimg{
+                    img{
+                        width : 90%;
+                        height : 400px ;
+                        margin : 20px 0px ;
+                       
+                    }                   
+                }
+                 &-title{
+                     font-size : 16px ;
+                 }
+            }
+         }
+
+
+    }
+    .howitwork-third-step{
+        margin-bottom:60px ;
+    }
+    @media only screen and (max-width: 600px) {
+        padding : 0px 5px ;
+        &-title{
+            font-size : 20px ;
+        }
+    }
+}

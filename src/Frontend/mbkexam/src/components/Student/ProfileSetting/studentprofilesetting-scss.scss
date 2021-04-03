@@ -1,0 +1,132 @@
+.studentprofilesetting-container{
+    display : flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width : 1080px ;
+    width : 100% ;
+    margin : 0px auto ;
+    margin-bottom : 100px ;
+    .studentprofilesetting-error{
+       
+        position : fixed ;
+        top : 10px ;
+        opacity : 0.9 ;
+        display : none ;
+        z-index : 5 ;
+        p{
+  
+            margin : 0px ;
+            margin-right : 10px
+        }
+        i{
+            margin : 0px ;
+            cursor : pointer ;
+        }
+    }
+    .studentprofilesetting-header{
+        display : flex ;
+        flex-direction: column;
+        margin : 0px auto ;
+        margin-top : 80px ;
+        width : 100% ;
+        p{
+            font-size : 18px ;
+            font-weight : 600 ;
+            text-transform : uppercase ;
+            margin-bottom : 0px ;
+            text-align : center ;
+        }
+        hr{
+            margin-top: 5px;
+        }
+   
+
+    }
+    .studentprofilesetting-content{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        width : 100% ;
+        margin : 0px auto ;
+        .studentprofilesetting-image{
+            display : flex ;
+            flex-direction: column;
+            align-items: center;
+            .image-error{
+                color : red ;
+                display : none ;
+            }
+            img{
+                width : 150px ;
+                height : 150px ;
+                border-radius : 50% ;
+                margin-bottom : 15px ;
+            }
+        }
+        .studentprofilesetting-info{
+            display : flex ;
+            flex-direction: column;
+            align-items: center;
+            margin : 30px auto ;
+            margin-bottom : 10px ;
+            width : 100% ;
+    
+            .form-group{
+                
+                width: 100%;
+            }
+         }
+        button{
+            background-color : #34495E ;
+            color : white ;
+            border : none ;
+            padding : 5px  ;
+            width : 150px ;
+            border-radius: 5px;
+        }
+
+    }
+    .studentprofilesetting-action{
+        display : flex ;
+        justify-content : center  ;
+        width : 100% ;
+        button{
+            
+            background-color :#34495E  ;
+            color : white ;
+            border : none ;
+            padding : 5px  ;
+            width : 150px ;
+            border-radius: 5px;
+            &:last-child{
+                margin-left : 20px ;
+            }
+        }
+
+    }
+    @media only screen and (max-width: 1080px) {
+        padding : 0px 5px ;
+    }
+    @media only screen and (max-width: 600px) {
+       
+        .studentprofilesetting-header{
+            margin-top : 150px ;
+        }
+        .studentprofilesetting-action{
+            flex-direction : column-reverse ;
+            justify-content : none  ;
+            button{
+               
+               
+                width : auto ;
+                &:first-child{
+                    margin-top : 10px ;
+                }
+                &:last-child{
+                    margin-left:0px ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.studentexamlist-container{
+    margin-bottom : 50px ;
+    width : 100% ;
+    .studentexamlist-header{
+        display : flex ;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom : 5px ;
+        p{
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        button{
+            height : 40px ;
+            color : white ;
+            background-color:#2E4053 ;
+            border: none;
+            width : 150px ;
+            border-radius: 10px;
+
+        }
+    }
+    .studentexamlist-content{
+        max-height: 500px;
+        overflow: auto;
+        width : 100% ;
+        &-empty{
+            display : flex ;
+            flex-direction :column  ;
+            align-items: center ;
+            justify-content : center ;
+            width : 100% ;
+            height : 500px ;
+            color : #283747 ;
+            i{
+                font-size : 60px ;
+                margin-bottom : 10px ;
+            }
+        }
+        table {
+            thead{
+                text-align: center;
+                background-color: #2E4053;
+            }
+            tbody tr td {
+                text-align: center;
+                button{
+                    background-color: #D0D3D4;
+                    color : white ;
+                    border : none ;
+                    border-radius : 50% ;
+        
+                    i{
+                        margin: 5px 7px;
+                        color : #2E4053 ;
+                    }
+                    
+                }
+    
+            }
+        }
+    }
+     @media only screen and (max-width: 768px) {
+         .studentexamlist-header{
+             p{
+                font-size :15px ;
+             }
+         }
+         .studentexamlist-content{
+             table{
+                font-size : 12.5px ;
+             }
+         }
+     }
+     @media only screen and (max-width: 1080px) {
+        padding : 0px 20px ;
+     }
+     @media only screen and (max-width: 600px) {
+        padding : 0px 5px ;
+     }
+}
+

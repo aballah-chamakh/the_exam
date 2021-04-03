@@ -1,0 +1,83 @@
+.examsetting-container{
+    display : flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width : 100% ;
+    margin : 0px auto ;
+    margin-bottom : 100px ;
+    .examsetting-error{
+        position : fixed ;
+        top : 80px ;
+        opacity : 0.9 ;
+        display : none ;
+
+        p{
+  
+            margin : 0px ;
+            margin-right : 10px
+        }
+        i{
+            margin : 0px ;
+            cursor : pointer ;
+        }
+    }
+    .examsetting-header{
+        display : flex ;
+        flex-direction: column;
+        margin : 0px auto ;
+       
+        width : 100% ;
+        p{
+            font-size : 18px ;
+            font-weight : 600 ;
+            text-transform : uppercase ;
+            margin-bottom : 0px ;
+            text-align : center ;
+        }
+        hr{
+            margin-top: 5px;
+        }
+    }
+    .examsetting-content{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        width : 100% ;
+        margin : 0px auto ;
+    }
+    .examsetting-action{
+        display : flex ;
+        justify-content : center  ;
+        width : 100% ;
+        margin-top : 20px ;
+        button{
+            background-color : #283747  ;
+            color : white ;
+            border : none ;
+            padding : 5px  ;
+            width : 150px ;
+            border-radius: 5px;
+            &:last-child{
+                margin-left : 20px ;
+            }
+        }
+
+    }
+    @media only screen and (max-width: 600px) {
+         margin-top : 10px ;
+        .examsetting-action{
+            margin-top : 10px ;
+            display : flex ;
+            flex-direction : column ;
+            button{
+                width : 100% ;
+                &:last-child{
+                    margin-top : 10px ;
+                    margin-left : 0px ;
+                }
+            }
+        }
+    }
+
+}

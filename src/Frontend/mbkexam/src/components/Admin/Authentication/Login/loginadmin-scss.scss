@@ -1,0 +1,54 @@
+.adminlogin-container{
+    display : flex ;
+    flex-direction : column ;
+    align-items : center ;
+    justify-content : center ;
+    position : relative ;
+    max-width : 1080px ;
+    margin : 0px auto ;
+    .adminlogin-error{
+        position : fixed  ;
+        opacity : 0.9 ;
+        width : 60% ;
+        z-index: 5 ;
+        display : none ;
+        justify-content : space-between ;
+        top : 80px ;
+       
+        i{
+            cursor : pointer ;
+        }
+        p{
+            margin : 0px ;
+            margin-right : 20px ;
+        }
+    }
+    img{
+        margin-top : 100px ;
+        width : 180px ;
+        height : 180px ;
+        border-radius : 50% ;
+    }
+    .adminlogin-form{
+      margin-top : 50px ;
+      width : 60% ;
+      button{
+          background-color : #2E4053 ;
+          width : 100% ;
+          padding : 10px  ;
+          color : white ;
+          border : none ;
+          border-radius : 5px ;
+        }
+    }
+    @media only screen and (max-width: 1080px) {
+        img{
+            width : 150px ;
+            height : 150px ;
+        }
+        .adminlogin-form{
+            margin-top : 30px ;
+            width : 90% ;
+        }
+    }
+}

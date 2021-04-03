@@ -1,0 +1,61 @@
+.resultmodal-container{
+    &-header{
+        display : flex ;
+        justify-content : space-between ;
+        align-items : center ;
+        padding-left : 20px ;
+        padding-right : 20px ; 
+        background-color : #1F2B2C  ;
+        height : 60px ;
+        color :white ;
+        p{
+            padding : 0px ;
+            margin : 0px ;
+        }
+        i{
+            cursor : pointer ;
+        }
+    }
+    &-content{
+
+        display : flex ;
+        flex-direction : column ;
+        align-items : center ;
+        padding : 20px 20px ;
+        p{
+            font-size : 16px ;
+        }
+        i{
+           font-size:60px ;
+        }
+    }
+    &-footer{
+        //background-color :  #1F2B2C ;
+        background-color : #DCDCDE ;
+        height : 50px ;
+        display : flex ;
+        justify-content : flex-end ;
+        align-items : center ;
+        padding-left : 20px ;
+        padding-right : 20px ; 
+        button{
+            height : 30px ;
+            border: none;
+            width : 100px ;
+            border-radius: 5px;
+            &:last-child{
+                margin-left : 10px ;
+            }
+        }
+        &-yes{
+            // background-color : #283747 ;
+            background-color :  #1F2B2C ;
+            color : white ;
+        }
+        &-no{
+            background-color : white  ;
+            color : #1F2B2C ;          
+        }
+      
+    }
+}

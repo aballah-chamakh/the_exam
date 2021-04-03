@@ -1,0 +1,124 @@
+.adminprofilesetting-container{
+    display : flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width : 100% ;
+    margin : 0px auto ;
+    .adminprofilesetting-error{
+       
+        position : fixed ;
+        top : 80px ;
+        opacity : 0.9 ;
+        display : none ;
+
+        p{
+  
+            margin : 0px ;
+            margin-right : 10px
+        }
+        i{
+            margin : 0px ;
+            cursor : pointer ;
+        }
+    }
+    .adminprofilesetting-header{
+        display : flex ;
+        flex-direction: column;
+        margin : 0px auto ;
+       
+        width : 100% ;
+        p{
+            font-size : 18px ;
+            font-weight : 600 ;
+            text-transform : uppercase ;
+            margin-bottom : 0px ;
+            text-align : center ;
+        }
+        hr{
+            margin-top: 5px;
+        }
+   
+
+    }
+    .adminprofilesetting-content{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        width : 100% ;
+        margin : 10px auto ;
+        .adminprofilesetting-image{
+            display : flex ;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width : 150px ;
+                height : 150px ;
+                border-radius : 50% ;
+                margin-bottom : 15px ;
+            }
+            .image-error{
+                color : red ;
+                display : none ;
+            }
+        }
+        .adminprofilesetting-info{
+            display : flex ;
+            flex-direction: column;
+            align-items: center;
+
+            width : 100% ;
+    
+            .form-group{
+                
+                width: 100%;
+            }
+         }
+        button{
+            background-color : #283747; 
+            color : white ;
+            border : none ;
+            padding : 5px  ;
+            width : 150px ;
+            border-radius: 5px;
+        }
+
+    }
+    .adminprofilesetting-action{
+        display : flex ;
+        justify-content : center  ;
+        width : 100% ;
+       
+        button{
+           
+            background-color :#283747  ;
+            color : white ;
+            border : none ;
+            padding : 5px  ;
+            width : 150px ;
+            border-radius: 5px;
+            &:last-child{
+                margin-left : 20px ;
+            }
+        }
+
+    }
+    @media only screen and (max-width: 600px) {
+        .adminprofilesetting-content{
+            button{
+                margin : 10px auto ;
+            }
+        } 
+        .adminprofilesetting-action{
+            display : flex ;
+            flex-direction:column ;
+            button{
+                width : 100% ;
+                &:last-child{
+                    margin-top : 10px ;
+                    margin-left : 0px ;
+                }
+            }
+        }
+    }
+}

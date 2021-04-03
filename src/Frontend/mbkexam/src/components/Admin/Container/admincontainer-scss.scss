@@ -1,0 +1,16 @@
+.admincontainer-container{
+    display : flex ;
+
+    width: 100%;
+    height : 100% ;
+    overflow-y : hidden ;
+    .admin-container-sidebar{
+        
+    }
+    .admin-container-content{
+        margin-left : 250px ;
+        
+        padding : 20px ;
+        
+    }
+}

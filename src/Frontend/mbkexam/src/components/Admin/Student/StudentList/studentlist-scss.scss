@@ -1,0 +1,73 @@
+.admin-studentlist-container{
+    .admin-studentlist-header{
+        p{
+            font-size : 20px ;
+            font-weight : 400 ;
+            text-transform : uppercase ;
+            margin : 0px ;
+            padding-bottom  : 10px ;
+        }
+        border-bottom : 1px solid ;
+        margin-bottom : 20px ;
+    }
+    .admin-studentlist-content{
+        width : 100% ;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none; 
+        overflow-y: auto; 
+        &-empty{
+            display : flex ;
+            flex-direction :column  ;
+            align-items: center ;
+            justify-content : center ;
+            width : 100% ;
+            height : 100vh ;
+            color : #283747 ;
+            i{
+                font-size : 60px ;
+                margin-bottom : 10px ;
+            }
+        }
+        table{
+            thead{
+                text-align : center ;
+            }
+            tbody{
+                tr{
+
+                    td{
+                       padding : auto 0px ;
+                        
+                        text-align: center ;
+                        
+                        
+                        padding-top : 25px ;
+                        &:first-child{
+                            padding-top : 10px ;
+                        }
+                        img{
+                            width :60px ;
+                            height: 60px ;
+                        }
+                        button{
+                            background-color: #D0D3D4;
+                            color : white ;
+                            border : none ;
+                            border-radius : 50% ;
+                
+                            i{
+                                margin: 5px 7px;
+                                color : #1F2B2C ;
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+}

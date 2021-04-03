@@ -1,0 +1,120 @@
+.student-anynavbar{
+    height : 60px ;
+    z-index : 10 ;
+    color : white ;
+    position : fixed ;
+   
+    width : 100% ;
+    display:flex ;
+    justify-content : center ;
+    .student-anynavbar-sidebar{
+       
+        position : fixed ;
+        top : 60px ;
+        left : -200px ;
+        height : 100vh ;
+        width : 200px ;
+        z-index: 20 ;
+        background-color : #2E4053 ;
+        opacity : 0.8 ;
+
+        ul{
+            list-style-type: none;
+            display : flex ;
+            flex-direction : column ;
+            align-items : center ;
+           li{
+                text-transform : capitalize ;
+                padding : 10px 0px ;
+                width : 80% ;
+                cursor : pointer ;
+                text-align : center ;
+                a{
+                    text-decoration : none ;
+                    color : white ;
+                    &:hover{
+                        text-decoration : none ;
+                    }
+                }
+                &:hover{
+                    border-bottom : 1px solid white ;
+                }
+           }
+
+        }
+        transition : all 200ms ;
+    }
+    .anynavbar-container{
+ 
+        display : flex ;
+        justify-content : space-between ;
+        align-items : center ;
+       // max-width : 1080px ;
+        padding : 0px 30px ;
+        width : 100% ;
+        position :relative ;
+        .anynavbar-logo{
+            cursor : pointer ;
+            h3{
+                font-size : 30px ;
+                text-transform : uppercase ;
+
+            }
+        }
+        .anynavbar-menu{
+            display : none ;
+            position : absolute ;
+            left : 10px ;
+            margin : auto 0px ;
+            cursor : pointer ;
+        }
+        .anynavbar-items{
+            
+            display : flex ;
+            justify-content : space-between ;
+            align-items : center ;
+            margin : auto 0px ;
+            list-style : none;
+            .anynavbar-item{
+                text-decoration : none ;
+                margin-right : 20px ;
+                text-transform : uppercase ;
+                padding-bottom : 3px ;
+                a{
+                    text-decoration : none ;
+                    color : white ;
+                    &:hover{
+                        text-decoration : none ;
+                    }
+                }
+                &:hover{
+                    
+                    border-bottom : 1px solid white ;
+                }
+                cursor : pointer ;
+                &:last-child{
+                    margin-right : 0px ;
+                }
+            }
+
+            
+        }
+        @media only screen and (max-width: 900px) {
+            justify-content : center ;
+            background-color : #2E4053 ;
+            color : white ;
+            .anynavbar-menu{
+                display : block ;
+            }
+            .anynavbar-logo{
+                h3{
+                    font-size :25px ;
+                }
+            }
+            .anynavbar-items{ 
+              display : none ;
+            }
+          }
+    }
+}
+

@@ -1,0 +1,63 @@
+.dashboard-container{
+    display : flex ;
+    flex-direction : column ;
+    margin : 0px auto ;
+    max-width : 100%;
+    width : 100% ;
+    .dashboard-header{
+        p{
+            font-size : 20px ;
+            font-weight : 400 ;
+            text-transform : uppercase ;
+            margin : 0px ;
+            padding-bottom  : 10px ;
+        }
+        border-bottom : 1px solid ;
+        margin-bottom : 20px ;
+    }
+    .dashboard-content{
+        width : 100% ;
+        
+        &-kpis{
+    
+           // display: grid;
+           
+            display : grid ;
+            justify-content : space-evenly ;
+           
+            grid-template-columns: repeat(auto-fit,200px) ;
+            grid-template-rows: auto auto auto ;
+            grid-gap : 20px 20px ;
+            
+           
+            &-kpi{
+                background-color : #1F618D ;
+                color : white ;
+                display : flex ;
+                flex-direction : column ; 
+                justify-content : center ;
+                align-items : center ;
+                height : 150px ;
+                width : 200px ;
+                border-radius : 5px ;
+                span{
+                    font-size : 30px ;
+                }
+               
+            }
+        }
+    .last-notification-container{
+        margin-top : 20px ;
+        .last-notification-viewmore{
+            text-align : center ;
+            color : blue ;
+            background-color : #F7F9F9 ;
+            padding : 5px 0px ;
+            width : 100% ;
+            border-radius : 15px ;
+            cursor : pointer ;
+        }
+    }
+    }
+
+}

@@ -1,0 +1,92 @@
+.studentsupport-container{
+    display : flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width : 1080px ;
+    width : 100% ;
+    margin : 0px auto ;
+    margin-bottom : 100px ;
+   
+    .studentsupport-success-alert{
+        display : none ;
+        opacity : 0.9 ;
+        position: fixed;
+        top : 80px ;
+        p {
+            margin : 0px ;
+            margin-right : 10px ;
+        }
+        i{
+            margin : 0px ;
+            cursor : pointer ;           
+        }
+    }
+    .studentsupport-header{
+        display : flex ;
+        flex-direction: column;
+        margin : 0px auto ;
+        margin-top : 80px ;
+        width : 100% ;
+        p{
+            font-size : 18px ;
+            font-weight : 600 ;
+            text-transform : uppercase ;
+            margin-bottom : 0px ;
+            text-align : center ;
+        }
+        hr{
+            margin-top: 5px;
+        }
+   
+
+    }
+    .studentsupport-image{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        width : 100% ;
+        margin : 0px auto ;
+
+        img{
+            height : 150px ;
+            width : 150px ; 
+        }
+    }
+    .studentsupport-form{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        width : 100% ;
+        margin : 0px auto ;
+    }
+    .studentsupport-action{
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        width : 100% ;
+        margin : 0px auto ;       
+        button{
+            background-color : #34495E ;
+            color : white ;
+            border : none ;
+            padding : 5px  ;
+            width : 150px ;
+            border-radius: 5px;
+        }
+    }
+    @media only screen and (max-width: 1080px) {
+        padding : 0px 5px ;
+    }
+    @media only screen and (max-width: 600px) {
+        padding : 0px 5px ;
+        .studentsupport-header{
+            margin-top : 150px ;
+        }
+        .studentsupport-action{
+            button{
+                width : 100% ;
+            }
+        }
+    }
+}

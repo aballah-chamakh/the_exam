@@ -1,0 +1,65 @@
+.belkhayatejourney-container{
+    display : flex ;
+    justify-content : center ;
+    padding : 60px ;
+    background-color : #2471A3 ;
+    color : white ;
+    .belkhayatejourney-hiddentitle{
+        display:none ;
+        text-align : center ;
+        margin : 0px ;
+        font-size : 30px ;
+        font-weight : 500 ;
+       
+    }
+    .belkhayatejourney-img{
+       
+        img{
+            width : 100% ;
+            height : 100% ;
+        }
+        margin-right : 30px ;
+    }
+    .belkhayatejourney-description{
+      display : flex ;
+      flex-direction : column ;
+      p{
+          margin : 0px ;
+          font-size : 30px ;
+          font-weight : 500 ;
+      }
+      ul{
+          list-style-type: none;
+          li{
+          
+                line-height : 30px ;
+                font-size : 18px ;
+               
+           
+          }
+      }
+    }
+    @media only screen and (max-width: 600px) {
+        flex-direction : column ;
+        align-items: center;
+        padding : 20px 5px ;
+        .belkhayatejourney-img{
+            text-align : center ;
+            margin : 0px auto ;
+        }
+        .belkhayatejourney-hiddentitle{
+            display : block ;
+            font-size : 20px ;
+            margin-bottom : 20px ;
+            
+        }
+        .belkhayatejourney-description{
+            p{
+                display : none ;
+            }
+            ul li{
+                font-size : 13px ;
+            }
+        }
+    }
+}
